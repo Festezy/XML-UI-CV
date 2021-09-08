@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/raw_bg"
+    android:background="@mipmap/raw_bg"
     android:orientation="vertical"
     tools:context=".MainActivity">
 
@@ -36,6 +36,7 @@
                 android:id="@+id/profile_image"
                 android:layout_width="150dp"
                 android:layout_height="150dp"
+                android:layout_marginStart="6dp"
                 android:src="@drawable/merahbird"
                 app:civ_border_width="2dp"
                 app:civ_border_color="#FF000000"/>
@@ -49,7 +50,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="30dp">
+                    android:layout_marginLeft="14dp">
 
                     <ImageView
                         android:layout_width="36dp"
@@ -68,7 +69,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginTop="16dp">
 
                     <ImageView
@@ -88,7 +89,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:orientation="horizontal"
-                    android:layout_marginLeft="30dp"
+                    android:layout_marginLeft="15dp"
                     android:layout_marginTop="16dp">
 
                     <ImageView
@@ -115,6 +116,7 @@
             android:orientation="horizontal">
 
             <Button
+                android:id="@+id/mainFollowButton"
                 android:layout_width="140dp"
                 android:layout_height="48dp"
                 android:layout_marginRight="30dp"
@@ -124,6 +126,7 @@
                 android:textSize="10sp" />
 
             <Button
+                android:id="@+id/mainSendMessageButton"
                 android:layout_width="140dp"
                 android:layout_height="48dp"
                 android:layout_marginRight="30dp"
@@ -132,6 +135,24 @@
                 android:textAllCaps="true"
                 android:textSize="10sp" />
         </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:layout_marginTop="5dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/mainDetailsButton"
+                android:layout_width="140dp"
+                android:layout_height="48dp"
+                android:layout_marginRight="30dp"
+                android:text="Details"
+                android:textAlignment="center"
+                android:textAllCaps="true"
+                android:textSize="10sp" />
+        </LinearLayout>
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
